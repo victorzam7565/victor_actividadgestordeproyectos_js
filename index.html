@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Gestor de Proyectos Victor</title>
+     <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+     <div id="contenedor">
+          <div id="menu">
+               <button onclick="abrirPanel('agregar')" class="opcion activo">Agregar</button>
+               <button onclick="abrirPanel('listar')" class="opcion">Listar</button>
+          </div>
+
+          <div id="agregar" class="panel activa">
+               <h2>Automatice su industria con un Plc</h2>
+               <form>
+                    <input type="text" placeholder="  Linea de produccion">
+                    <input type="text" placeholder="identifique el producto">
+                    <input type="number" placeholder="Monto">
+                    <button type="submit">Agregar</button>
+               </form>
+          </div>
+
+          <div id="listar" class="panel">
+               <h2>Historial de Proyectos</h2>
+               <table border="1">
+                    <tr>
+                         <th>Proyecto</th>
+                         <th>Lenguaje</th>
+                         <th>Monto Facturado en Dólares</th>
+                    </tr>
+               </table>
+          </div>
+     </div>
+
+     <script src="./js/funciones.js"></script>
+</body>
+</html>
