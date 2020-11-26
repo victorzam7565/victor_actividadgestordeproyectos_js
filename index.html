@@ -4,32 +4,44 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Gestor de Proyectos Victor</title>
-          <link rel="stylesheet" href="./css/estilos.css">
+          <link rel="stylesheet" href="./css/stilos.css">
      </head>
      <body>
           <div id="contenedor">
                <div id="menu">
                     <button onclick="abrirPanel('agregar')" class="opcion activo">Admitir datos</button>
-                    <button onclick="abrirPanel('listar')" class="opcion"> Mostrar Lista</button>
+                    <button onclick="abrirPanel('listar')" class="opcion">Mostrar Listado</button>
+                    <button onclick="abrirPanel('mensajes'),traerMensaje()" class="opcion">Mostrar Mensaje</button>
                </div>
      
                <div id="agregar" class="panel activa">
-                    <h2>Automatice su empresa con un plc</h2>
+                    <h2>Ingrese su Proyecto a Realizar</h2>
                     <form>
                          <input type="text" id='nombre' placeholder="Nombre del Proyecto">
                          <input type="text" id='lenguaje' placeholder="Lenguaje">
                          <input type="number" id='monto' placeholder="Monto">
-                         <button type="submit" onclick="insertar(event)">Admitir datos.</button>
+                         <button type="submit" onclick="insertar(event)">Admitir Datos</button>
                     </form>
                </div>
      
                <div id="listar" class="panel">
-                    <h2>Historial de clientes y Empresas</h2>
+                    <h2>Historial de Proyectos en Listado.</h2>
                     <table class="centrarTabla" id="listarProyectos" border="1">
                          <tr>
-                              <th>Proyecto</th>
-                              <th>Lenguaje</th>
-                              <th>Monto Facturado en Dólares</th>
+                              <th>Proyecto a Realizar</th>
+                              <th>Codigo de programacion</th>
+                              <th>Precio de Cotizacion en Dólares</th>
+                         </tr>
+                    </table>
+               </div>
+     
+               <div id="mensajes" class="panel">
+                    <h2>Datos de los Contactos</h2>
+                    <table class="centrarTabla" id="listarMensajes" border="1">
+                         <tr>
+                              <th>Primer Nombre y Apellido</th>
+                              <th>Teléfono</th>
+                              <th>Contacto</th>
                          </tr>
                     </table>
                </div>

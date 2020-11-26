@@ -1,32 +1,36 @@
-/* Contenedor */
-#contenedor{
+ /* Contenedor */
+ #contenedor{
     display: flex;
 }
 /* Menu */
 #menu{
-    background-color: #f1f1f1;
+    background-color: #b714e9;
     width: 30%;
     height: 300px;
 }
 #menu>button{
-    padding: 16px 22px;
+    padding: 50px 50px;
     width: 100%;
     border: none;
     text-align: left;
     cursor: pointer;
 }
 #menu>button:hover{
-    background-color: #ddd;
+    background-color: rgb(94, 17, 145);
 }
 .activo{
-    background-color: #ccc;
+    background-color: rgb(168, 128, 128);
+}
+/* Tabla */
+.centrarTabla{
+    margin: 12 auto;
 }
 /* Panel */
 .panel{
-    padding: 0 12px;
-    width: 70%;
+    padding: 0 50px;
+    width: 60%;
     border-left: none;
-    height: 300px;
+    height: 500px;
     display: none;
     text-align: center;
 }
